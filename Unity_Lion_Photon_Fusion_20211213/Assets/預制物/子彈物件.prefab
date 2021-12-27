@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6202100946676293961}
   - component: {fileID: 6202100946676293962}
   - component: {fileID: 8944462105228112454}
+  - component: {fileID: 3565403456296255880}
   m_Layer: 0
   m_Name: "\u5B50\u5F48\u7269\u4EF6"
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6202100946676293960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5, y: 1, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 8742586882532025093}
   m_Father: {fileID: 0}
@@ -80,12 +81,13 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 0
   AoiPosition: {fileID: 0}
-  Flags: 2561
+  Flags: 2305
   NetworkGuid:
-    RawGuidValue: 9d389be2500f4195b366947528933c19
+    RawGuidValue: 451c60dfb36a6b84e98f28b4a82d413b
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 6202100946676293961}
+  - {fileID: 3565403456296255880}
   SimulationBehaviours: []
 --- !u!135 &8944462105228112454
 SphereCollider:
@@ -100,6 +102,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0.28}
+--- !u!114 &3565403456296255880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202100946676293960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef0546af19cb00479c80c3e92a66be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  speed: 5
+  lifeTime: 5
 --- !u!1001 &4037307891265122703
 PrefabInstance:
   m_ObjectHideFlags: 0
